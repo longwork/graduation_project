@@ -7,14 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-design" />
-        <module name="front-end" />
+        <module name="graduation-design" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="front-end" target="1.8" />
+      <module name="user-design" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="front-end" options="" />
+      <module name="graduation-design" options="" />
       <module name="user-design" options="" />
     </option>
   </component>
