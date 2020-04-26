@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="graduation-design" />
+        <module name="graduation-design-end" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="front-end" options="" />
       <module name="graduation-design" options="" />
+      <module name="graduation-design-end" options="" />
       <module name="user-design" options="" />
     </option>
   </component>

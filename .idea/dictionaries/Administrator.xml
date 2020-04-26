@@ -1,7 +1,16 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Administrator">
     <words>
+      <w>acco</w>
+      <w>accountid</w>
+      <w>cardid</w>
       <w>layui</w>
+      <w>menutype</w>
+      <w>otherid</w>
+      <w>pagehelper</w>
+      <w>personinfo</w>
+      <w>realname</w>
+      <w>selmenu</w>
       <w>shiro</w>
       <w>signin</w>
       <w>wimi</w>
