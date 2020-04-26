@@ -137,7 +137,6 @@ public class PersonController {
     @ResponseBody
     public JsonResult<Integer> submitInfo(PersonVO personVO) {
         try {
-
             int result = personService.submitInfo(personVO);
             if (result == 1) {
                 return new JsonResult<>(result);
