@@ -5,7 +5,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
- * @author Long WenChao
+ * @author Administrator
  */
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
