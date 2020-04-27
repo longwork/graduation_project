@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="wimi.student.mapper.PersoninfoMapper">
+    <select id="getAllPerson" resultType="wimi.student.entity.PersonVO">
+        SELECT a.id,a.username,a.balance,p.realname,p.address,p.cardid,p.telephone,a.`status`
+        FROM personinfo p JOIN account a
+        ON p.accountid=a.id
+        limit #{page},#{rows}
+    </select>
+
+    <select id="countAllPerson" resultType="java.lang.Integer">
+        SELECT count(*)
+        FROM personinfo p JOIN account a
+        ON p.accountid=a.id
+        where 1=1
+        <if test="status!=null and status!=''">
+            and a.status like '%${status}%'
+        </if>
+    </select>
+
+    <select id="getPerson" resultType="wimi.student.entity.PersonVO">
+        SELECT a.id,a.username,a.balance,p.realname,p.address,p.cardid,p.telephone,a.`status`
+        FROM personinfo p JOIN account a
+        ON p.accountid=a.id
+        where 1=1
+        <if test="status!=null and status!=''">
+            and a.status like '%${status}%'
+        </if>
+        limit #{page},#{rows}
+    </select>
+
+    <select id="getPersonList" resultType="wimi.student.entity.PersonVO">
+        SELECT a.id,a.username,a.balance,p.realname,p.address,p.cardid,p.telephone,a.`status`
+        FROM personinfo p JOIN account a
+        ON p.accountid=a.id
+    </select>
+</mapper>

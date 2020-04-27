@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: nacos-graduation-design
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        #指定配置中心中配置文件的格式
+        file-extension: yml
+        #指定文件名
+        prefix: ${spring.application.name}
+        #DEV命名空间的ID
+        namespace: 532ae791-ff42-498f-83d3-856898e93e56
