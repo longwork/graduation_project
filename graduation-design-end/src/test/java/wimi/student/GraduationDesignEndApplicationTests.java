@@ -21,7 +21,7 @@ public class GraduationDesignEndApplicationTests {
     @Test
     public void contextLoads() throws SQLException {
         Connection connection = dataSource.getConnection();
-        Assert.assertNull(connection);
+        Assert.assertNotNull(connection);
     }
 
 }

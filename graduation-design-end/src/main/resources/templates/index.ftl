@@ -13,7 +13,7 @@
 <div class="easyui-layout" style="width:100%;height:800px;">
     <div data-options="region:'north'" style="height:90px;">
         <span style="font-size: 30px; position: relative; left: 46px; bottom: -24px;font-weight: 600;width: 150px;overflow: hidden">网上银行业务系统</span>
-        <div style=" float: right; margin: 40px 20px 8px 0px;font-size: 16px;overflow: hidden">
+        <div style=" float: right; margin: 40px 20px 8px 0;font-size: 16px;overflow: hidden">
             <a id="loginId" class="easyui-linkbutton" data-options="iconCls:'icon-man'" title="${Session["role"]}" style="width:100px;height: 30px;line-height: 30px;">
                ${Session["username"]}
             </a>
@@ -190,8 +190,8 @@
         }
     };
     function zTreeOnClick(event, treeId, treeNode) {
-        if(treeNode.parentId==null || treeNode.parentId==''){
-            if(treeNode.children!=null && treeNode.children!=''){
+        if(treeNode.parentId==null || treeNode.parentId===''){
+            if(treeNode.children!=null && treeNode.children!==''){
                 return;
             }
         }
